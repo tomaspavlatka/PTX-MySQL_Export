@@ -1,0 +1,32 @@
+Introduction
+------------
+
+PTX MySQL Export
+
+PTX MySQL Export is a small PHP tool to export MySQL database, store it into
+a file (possible to archive it first) and send it via FTP every where.
+
+Code is written in object PHP.
+
+Documentation and Examples
+--------------------------
+Only what you must set up properly is following:
+
+$params = array(
+    'database' => array(
+        'db_host'       => 'localhost', 
+        'db_name'       => 'db_name',
+        'db_user'       => 'root',
+        'db_password'   => '',
+        'db_charset'    => 'utf8'),
+    'ftp' => array(
+        'ftp_server'    => '',
+        'ftp_username'  => '',
+        'ftp_password'  => '',
+        'ftp_folder'    => ''
+    ),
+    'export' => array(
+        'export_folder' => './backups/',
+        'export_zip'    => 'bzip2',
+    )
+);
