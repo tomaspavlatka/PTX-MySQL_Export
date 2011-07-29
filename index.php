@@ -12,7 +12,7 @@ header("content-type: text/plain; charset=utf-8");
 // Require classes.
 require_once 'classes/Database.php';
 
-// Database settings.
+// Export params.
 $params = array(
     'database' => array(
 	    'db_host'       => 'localhost',
